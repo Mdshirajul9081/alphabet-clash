@@ -17,6 +17,8 @@ function continueGame(){
     currentAlphabetElement.innerText=alphabet;
     // set the background color
     setBackgroundColor(alphabet);
+    //remove background color
+    removeBackgroundColor(alphabet)
 
 }
 
