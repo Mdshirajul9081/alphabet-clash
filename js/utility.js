@@ -18,6 +18,20 @@ function removeBackgroundColor(elementId){
     element.classList.remove('bg-orange-400')
 }
 
+// score function
+function getScoreElementById(elementId){
+    const element=document.getElementById(elementId)
+    const elementValue=element.innerText
+    const value=parseInt(elementValue)
+    return value;
+
+}
+function setScoreElementById(elementId,value){
+    const element=document.getElementById(elementId)
+    element.innerText=value
+
+}
+
 
 function getARandomAlphabet(){
     const alphabetString='abcdefghijklmnopurstuvwxyz'
@@ -35,4 +49,9 @@ function getARandomAlphabet(){
     // console.log(index,alphabet);
     // and return the alphabet
     return alphabet
+}
+function getElementTextById(elementId){
+    const event=document.getElementById(elementId)
+    const text=event.innerText
+    return text
 }
