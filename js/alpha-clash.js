@@ -16,7 +16,7 @@
 function handelKeyBoardKeyPress(event) {
     const playerPress = event.key;
     console.log('player press', playerPress);
-    if(playerPress==='Escaped'){
+    if(playerPress==='Escape'){
         gameOver()
     }
     //get the expected to press
@@ -119,5 +119,5 @@ function gameOver(){
     console.log(lastScore);
     setScoreElementById('game-score',lastScore)
     const currentalpha=getElementTextById('current-alpha')
-    removeBackgroundColor(cu)
+    removeBackgroundColor(currentalpha)
 }
