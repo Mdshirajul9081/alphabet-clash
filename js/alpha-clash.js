@@ -26,6 +26,19 @@ function handelKeyBoardKeyPress(event){
 //    checked match or not 
 if(playerPress===expected){
     console.log('you get a point ');
+    // update a score
+    const currentScoreElement=document.getElementById('current-score')
+    const currentScoreText=currentScoreElement.innerText;
+    const currentScore=parseInt(currentScoreText)
+    console.log(currentScore);
+    // updata score 
+   const newScore=currentScore+1;
+   //    update score
+    currentScoreElement.innerText=newScore
+    
+    // start a new round 
+    removeBackgroundColor(expected)
+    continueGame()
 } 
 else{
     console.log('you missed.lost a life');
