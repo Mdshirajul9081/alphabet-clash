@@ -13,10 +13,10 @@ function setBackgroundColor(elementId){
     const element=document.getElementById(elementId)
     element.classList.add('bg-orange-400') 
 }
-function removeBackgroundColor(elementId){
-    const element=document.getElementById(elementId)
-    element.classList.remove('bg-orange-400')
-}
+// function removeBackgroundColor(elementId){
+//     const element=document.getElementById(elementId)
+//     element.classList.remove('bg-orange-400')
+// }
 
 
 function getARandomAlphabet(){
@@ -28,7 +28,7 @@ function getARandomAlphabet(){
 
     // get the random alphabets and take the A to Z index 25 
     const randomNumber=Math.random()*25;
-    //and it round the number and its give the purno number
+    //and it round the number and its give the integer number
     const index=Math.round(randomNumber);
     //and take the all alphabets index number 
     const alphabet=alphabets[index]
